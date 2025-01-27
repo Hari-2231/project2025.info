@@ -1,0 +1,149 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+#hero {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #a45b5b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#designForm label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+#designForm input, #designForm textarea, #designForm select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#design-recommendations{
+   margin-top: 20px;
+   line-height: 1.8;
+}
+
+#visualization-container {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+
+/* Responsive Menu Styles */
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media(max-width:768px){
+ .menu-toggle {
+    display: block;
+}
+header nav{
+  display: none;
+    position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+  header nav ul{
+      flex-direction: column;
+      padding: 20px;
+  }
+
+ header nav ul li{
+     margin: 10px 0;
+     display: block;
+ }
+  header nav.active{
+      display: block;
+  }
+  header .container{
+      justify-content: space-between;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Station Building Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hill Station Design System</h1>
+            <nav>
+                <ul>
+                   <li><a href="#about">About</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Residential Building Design for Hill Stations</h2>
+                <p>Generate customized building designs considering land slope, soil type, and materials.</p>
+                <a href="#design" class="button">Start Designing</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About the Project</h2>
+                <p>
+                   This system integrates user inputs like land slope, soil type, and material preferences to generate customized building designs for hill station residences. 
+                   It includes a 3D visualization feature, disaster risk analysis, and eco-friendly construction recommendations to ensure safety, efficiency, and sustainability.
+                 </p>
+            </div>
+        </section>
+
+
+        <section id="design">
+            <div class="container">
+                <h2>Design Input Form</h2>
+                <form id="designForm">
+                    <label for="landSlope">Land Slope:</label>
+                    <input type="text" id="landSlope" name="landSlope" required placeholder="e.g. 15 degrees">
+
+                    <label for="soilType">Soil Type:</label>
+                    <select id="soilType" name="soilType" required>
+                        <option value="">Select Soil Type</option>
+                        <option value="clay">Clay</option>
+                        <option value="sandy">Sandy</option>
+                         <option value="loam">Loam</option>
+                         <option value="gravel">Gravel</option>
+                    </select>
+
+                    <label for="materialPreferences">Material Preferences:</label>
+                    <input type="text" id="materialPreferences" name="materialPreferences"  placeholder="e.g. Cement, Wood, Bricks" >
+
+                     <label for="otherPreferences">Other Considerations:</label>
+                    <textarea id="otherPreferences" name="otherPreferences" rows="3" placeholder="e.g., Budget, space constraints"></textarea>
+
+                    <button type="submit" class="button">Generate Design</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results" style="display:none;">
+            <div class="container">
+                <h2>Design Results</h2>
+                 <div id="visualization-container"></div>
+               <div id="design-recommendations">
+                  <h3>Recommendations</h3>
+                 <p><strong>Foundation:</strong> <span id="foundation-result"></span></p>
+                  <p><strong>Structural Design:</strong> <span id="structural-result"></span></p>
+                  <p><strong>Materials:</strong> <span id="material-result"></span></p>
+                   <p><strong>Disaster Mitigation:</strong> <span id="disaster-result"></span></p>
+                     <p><strong>Sustainability:</strong> <span id="sustainability-result"></span></p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>This is a team project by students of PSNA College of Engineering and Technology:</p>
+                <p>
+                     Team Members: <br>
+                   Harish R - harishr21ce@psnacet.edu.in <br>
+                   Joe Ryan I - joeryani21ce@psnacet.edu.in <br>
+                   Jayanth Subramanian S - jayanthsubramanians21ce@psnacet.edu.in <br>
+                   Hari Das S - haridass21ce@psnacet.edu.in <br>
+                   Guide: Ms. S. Swathini - swathinivasus@psnacet.edu.in <br>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Hill Station Design System.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
